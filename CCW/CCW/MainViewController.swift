@@ -18,12 +18,15 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //test
+        idTextField.text = "hello"
+        pwTextField.text = "123123"
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        idTextField.text = ""
-        pwTextField.text = ""
-        print("Main View will Applear")
+//        idTextField.text = ""
+//        pwTextField.text = ""
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -45,8 +48,8 @@ class MainViewController: UIViewController {
                 let storyboardToPresent: UIStoryboard = UIStoryboard(name: "FrontMain", bundle: nil)
                 let vc: MainTabbarViewController = storyboardToPresent.instantiateViewController(identifier: "CocoWorldTabbar") as! MainTabbarViewController
                 
-//                self.navigationController?.pushViewController(vc, animated: true)
-                self.present(vc, animated: true, completion: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+                //self.present(vc, animated: true, completion: nil)
                 SysUtils.makeToast(message: "코코월드에 들어오신 걸 환영합니다", durationTime: 3, delayTime: 0.2)
                 
                 idTextField.text = ""

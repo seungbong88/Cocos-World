@@ -3,18 +3,49 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--homeView-->
         <scene sceneID="634-9v-nVE">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJd-Rm-trX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="homeView" id="W1L-Ab-7V8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="6ng-oE-him"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WJd-Rm-trX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="617" y="646"/>
+            <point key="canvasLocation" x="-212" y="1377"/>
+        </scene>
+        <!--날씨-->
+        <scene sceneID="Iil-s5-mrE">
+            <objects>
+                <viewController id="nxD-xM-sHg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lJv-Gj-P97">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0w9-Aj-bcn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <connections>
+                                    <segue destination="Nhq-Ci-dKW" kind="embed" id="oi9-ev-1w6"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0w9-Aj-bcn" firstAttribute="leading" secondItem="CLQ-u8-2l3" secondAttribute="leading" id="Azz-WY-zNn"/>
+                            <constraint firstItem="0w9-Aj-bcn" firstAttribute="top" secondItem="CLQ-u8-2l3" secondAttribute="top" id="Hfi-rz-9R7"/>
+                            <constraint firstItem="CLQ-u8-2l3" firstAttribute="trailing" secondItem="0w9-Aj-bcn" secondAttribute="trailing" id="Qkc-vd-6LJ"/>
+                            <constraint firstItem="CLQ-u8-2l3" firstAttribute="bottom" secondItem="0w9-Aj-bcn" secondAttribute="bottom" id="sy0-yq-AUB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CLQ-u8-2l3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="날씨" badgeValue="new" id="xn3-4k-kvE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8V-Ze-z1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="937"/>
         </scene>
         <!--weatherView-->
         <scene sceneID="aW6-Ag-Mof">
@@ -24,7 +55,67 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPd-Eq-Wzy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869" y="646"/>
+            <point key="canvasLocation" x="630" y="1377"/>
+        </scene>
+        <!--앨범-->
+        <scene sceneID="14U-zq-C7s">
+            <objects>
+                <viewController id="QCr-QW-R5e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ifS-jW-wzH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIR-dj-clG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <connections>
+                                    <segue destination="lRc-VC-7er" kind="embed" id="QbU-G1-qna"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V3x-ge-Qug" firstAttribute="bottom" secondItem="cIR-dj-clG" secondAttribute="bottom" id="KY0-j4-l6L"/>
+                            <constraint firstItem="cIR-dj-clG" firstAttribute="leading" secondItem="V3x-ge-Qug" secondAttribute="leading" id="PgZ-i1-JFD"/>
+                            <constraint firstItem="cIR-dj-clG" firstAttribute="trailing" secondItem="V3x-ge-Qug" secondAttribute="trailing" id="hae-Sj-66G"/>
+                            <constraint firstItem="cIR-dj-clG" firstAttribute="top" secondItem="V3x-ge-Qug" secondAttribute="top" id="zIK-KB-zbw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V3x-ge-Qug"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="앨범" id="Jul-iu-WvT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbd-6p-zTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="937"/>
+        </scene>
+        <!--마이-->
+        <scene sceneID="JH5-DL-TMD">
+            <objects>
+                <viewController id="KW3-PU-DAL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ca-5R-qnr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-5T-tIg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <connections>
+                                    <segue destination="HZh-XR-eee" kind="embed" id="h4S-Np-jYa"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sNa-Wv-JOD" firstAttribute="bottom" secondItem="Vkf-5T-tIg" secondAttribute="bottom" id="4XX-l3-Vv9"/>
+                            <constraint firstItem="Vkf-5T-tIg" firstAttribute="leading" secondItem="sNa-Wv-JOD" secondAttribute="leading" id="AyS-Wo-rsR"/>
+                            <constraint firstItem="Vkf-5T-tIg" firstAttribute="top" secondItem="sNa-Wv-JOD" secondAttribute="top" id="n4f-k6-fi5"/>
+                            <constraint firstItem="sNa-Wv-JOD" firstAttribute="trailing" secondItem="Vkf-5T-tIg" secondAttribute="trailing" id="xLk-o6-4TZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sNa-Wv-JOD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="마이" id="Bdi-kL-In9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gts-1q-ibR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="937"/>
         </scene>
         <!--profileView-->
         <scene sceneID="cre-zb-2oy">
@@ -34,7 +125,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qat-iU-W8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368" y="646"/>
+            <point key="canvasLocation" x="2393" y="1377"/>
         </scene>
         <!--albumView-->
         <scene sceneID="Ek9-ys-bLi">
@@ -44,7 +135,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUl-k8-V31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="646"/>
+            <point key="canvasLocation" x="1461" y="1377"/>
         </scene>
         <!--Main Tabbar View Controller-->
         <scene sceneID="KMY-0b-uFA">
@@ -58,15 +149,45 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="W1L-Ab-7V8" kind="relationship" relationship="viewControllers" id="w4I-NZ-cj6"/>
-                        <segue destination="Nhq-Ci-dKW" kind="relationship" relationship="viewControllers" id="gOh-cK-VnZ"/>
-                        <segue destination="lRc-VC-7er" kind="relationship" relationship="viewControllers" id="bnl-WO-Y7C"/>
-                        <segue destination="HZh-XR-eee" kind="relationship" relationship="viewControllers" id="rWV-bD-hlI"/>
+                        <segue destination="rB0-9I-39C" kind="relationship" relationship="viewControllers" id="PCy-3F-tEm"/>
+                        <segue destination="nxD-xM-sHg" kind="relationship" relationship="viewControllers" id="skb-ub-1nC"/>
+                        <segue destination="QCr-QW-R5e" kind="relationship" relationship="viewControllers" id="q3m-aZ-eZL"/>
+                        <segue destination="KW3-PU-DAL" kind="relationship" relationship="viewControllers" id="sL8-mv-7Z3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fH2-V5-B4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1010.144927536232" y="142.63392857142856"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="kX1-Bx-wuI">
+            <objects>
+                <viewController id="rB0-9I-39C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zb2-bY-jb1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6F-7J-XcR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <connections>
+                                    <segue destination="W1L-Ab-7V8" kind="embed" id="6vu-qn-dll"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kYq-8r-WdY" firstAttribute="trailing" secondItem="T6F-7J-XcR" secondAttribute="trailing" id="4Ps-2D-q5v"/>
+                            <constraint firstItem="T6F-7J-XcR" firstAttribute="leading" secondItem="kYq-8r-WdY" secondAttribute="leading" id="IAN-Zq-f7C"/>
+                            <constraint firstItem="kYq-8r-WdY" firstAttribute="bottom" secondItem="T6F-7J-XcR" secondAttribute="bottom" id="XZi-Vg-c3V"/>
+                            <constraint firstItem="T6F-7J-XcR" firstAttribute="top" secondItem="kYq-8r-WdY" secondAttribute="top" id="b7G-HW-Vtl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kYq-8r-WdY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" id="roJ-Ps-TIl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEB-mk-dXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213" y="937"/>
         </scene>
     </scenes>
 </document>
