@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="z5c-HJ-lUW">
+            <objects>
+                <viewController storyboardIdentifier="homeView" id="hcz-hR-1go" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zla-vb-t7J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to CoCo's World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffd-R3-QZK">
+                                <rect key="frame" x="20" y="74" width="374" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="M6T-MW-nMC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="97Z-G8-5Bm">
+                                <rect key="frame" x="0.0" y="131" width="414" height="731"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batch_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Jir-Q5-Usw">
+                                        <rect key="frame" x="201" y="50" width="173" height="238"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="238" id="1Ga-BA-35k"/>
+                                            <constraint firstAttribute="width" constant="173" id="TGw-0E-4ac"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바지입은 코코" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6z-t6-uk9">
+                                        <rect key="frame" x="270" y="298" width="104" height="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batch_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="d5P-U2-GiT">
+                                        <rect key="frame" x="40" y="461" width="173" height="202"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="173" id="BS9-t0-Hjv"/>
+                                            <constraint firstAttribute="height" constant="202" id="Uaq-kY-8Xq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앙증맞은 표정으로 찍은 셀카" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAt-Ab-pJC">
+                                        <rect key="frame" x="213" y="647" width="168" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="YgJ-HW-HX4"/>
+                                            <constraint firstAttribute="width" constant="168" id="apy-Ce-4ik"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여름 트렁크를 입고 패션센스를 뽐내고있다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEu-62-snl">
+                                        <rect key="frame" x="121" y="324" width="253" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="253" id="0kp-Q4-dCC"/>
+                                            <constraint firstAttribute="height" constant="18" id="1MI-Zm-9Iq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코코 셀카" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3b-lQ-bVx">
+                                        <rect key="frame" x="213" y="623.5" width="71" height="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="I4S-Pj-hbX" firstAttribute="trailing" secondItem="Jir-Q5-Usw" secondAttribute="trailing" constant="40" id="6r9-Rw-nOh"/>
+                                    <constraint firstItem="T3b-lQ-bVx" firstAttribute="height" secondItem="KAt-Ab-pJC" secondAttribute="height" multiplier="1.4375" id="9m6-yh-vRb"/>
+                                    <constraint firstItem="T3b-lQ-bVx" firstAttribute="width" secondItem="KAt-Ab-pJC" secondAttribute="width" multiplier="0.422619" id="AcJ-44-2qH"/>
+                                    <constraint firstItem="B6z-t6-uk9" firstAttribute="trailing" secondItem="Jir-Q5-Usw" secondAttribute="trailing" id="Elw-0r-UJj"/>
+                                    <constraint firstItem="d5P-U2-GiT" firstAttribute="top" secondItem="eEu-62-snl" secondAttribute="bottom" constant="119" id="K8g-A1-nmx"/>
+                                    <constraint firstItem="d5P-U2-GiT" firstAttribute="leading" secondItem="97Z-G8-5Bm" secondAttribute="leading" constant="40" id="Oka-Kk-U0j"/>
+                                    <constraint firstItem="T3b-lQ-bVx" firstAttribute="leading" secondItem="KAt-Ab-pJC" secondAttribute="leading" id="QLO-TI-Sdc"/>
+                                    <constraint firstItem="eEu-62-snl" firstAttribute="top" secondItem="B6z-t6-uk9" secondAttribute="bottom" constant="3" id="XxH-1O-DNG"/>
+                                    <constraint firstItem="B6z-t6-uk9" firstAttribute="top" secondItem="Jir-Q5-Usw" secondAttribute="bottom" constant="10" id="apj-Xl-4aV"/>
+                                    <constraint firstItem="KAt-Ab-pJC" firstAttribute="leading" secondItem="d5P-U2-GiT" secondAttribute="trailing" id="ggI-vM-4Mi"/>
+                                    <constraint firstItem="Jir-Q5-Usw" firstAttribute="top" secondItem="I4S-Pj-hbX" secondAttribute="top" constant="50" id="hGM-3V-GFx"/>
+                                    <constraint firstItem="KAt-Ab-pJC" firstAttribute="firstBaseline" secondItem="T3b-lQ-bVx" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="i6j-XC-B3P"/>
+                                    <constraint firstItem="eEu-62-snl" firstAttribute="trailing" secondItem="B6z-t6-uk9" secondAttribute="trailing" id="o4F-OM-1vI"/>
+                                    <constraint firstItem="KAt-Ab-pJC" firstAttribute="bottom" secondItem="d5P-U2-GiT" secondAttribute="bottom" id="tJQ-hf-EKu"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="la9-0Q-00n"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="I4S-Pj-hbX"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qhb-3M-2Zv" firstAttribute="trailing" secondItem="Ffd-R3-QZK" secondAttribute="trailing" constant="20" id="F0S-Qm-dXe"/>
+                            <constraint firstItem="97Z-G8-5Bm" firstAttribute="bottom" secondItem="qhb-3M-2Zv" secondAttribute="bottom" id="W5z-wg-OD1"/>
+                            <constraint firstItem="Ffd-R3-QZK" firstAttribute="top" secondItem="qhb-3M-2Zv" secondAttribute="top" constant="30" id="Z6P-Ih-g5o"/>
+                            <constraint firstItem="97Z-G8-5Bm" firstAttribute="leading" secondItem="zla-vb-t7J" secondAttribute="leading" id="eM5-ja-3SX"/>
+                            <constraint firstItem="97Z-G8-5Bm" firstAttribute="top" secondItem="Ffd-R3-QZK" secondAttribute="bottom" constant="28" id="eVp-TJ-DAv"/>
+                            <constraint firstItem="97Z-G8-5Bm" firstAttribute="centerX" secondItem="Ffd-R3-QZK" secondAttribute="centerX" id="ev6-fs-73T"/>
+                            <constraint firstItem="Ffd-R3-QZK" firstAttribute="leading" secondItem="qhb-3M-2Zv" secondAttribute="leading" constant="20" id="sp5-75-Xyu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qhb-3M-2Zv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQS-ec-3q4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="batch_1.jpg" width="72" height="96"/>
+        <image name="batch_5.jpg" width="87" height="116"/>
+    </resources>
+</document>
